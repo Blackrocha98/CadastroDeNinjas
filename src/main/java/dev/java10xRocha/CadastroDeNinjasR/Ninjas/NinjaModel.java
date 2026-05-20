@@ -1,4 +1,5 @@
-package dev.java10xRocha.CadastroDeNinjasR;
+package dev.java10xRocha.CadastroDeNinjasR.Ninjas;
+import dev.java10xRocha.CadastroDeNinjasR.Missoes.MissoesModel;
 import jakarta.persistence.*;
 
 @Entity
@@ -8,9 +9,16 @@ public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
+
     private String email;
+
     private int idade;
+
+    @ManyToOne
+    @JoinColumn(name = "missoes_id")
+    private MissoesModel  missoes;
 
     public NinjaModel() {
     }

@@ -1,4 +1,4 @@
-package dev.java10xRocha.CadastroDeNinjasR;
+package dev.java10xRocha.CadastroDeNinjasR.Ninjas;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
